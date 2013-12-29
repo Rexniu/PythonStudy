@@ -1,0 +1,16 @@
+>>> l = [365,'everyday',0.618,True]
+>>> print l[1]
+everyday
+>>> print l[0]
+365
+>>> l[0] = 0
+>>> l
+[0, 'everyday', 0.618, True]
+>>> l.append(1024)
+>>> l
+[0, 'everyday', 0.618, True, 1024]
+>>> del l[0]
+>>> l
+['everyday', 0.618, True, 1024]
+>>> l[0]
+'everyday'
