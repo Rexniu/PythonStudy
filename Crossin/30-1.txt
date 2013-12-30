@@ -1,0 +1,40 @@
+#字符串和list相似的操作
+>>> word= 'helloworld'
+>>> for c in word:
+	print c
+
+h
+e
+l
+l
+o
+w
+o
+r
+l
+d
+>>> print word[0]
+h
+>>> print word[-2]
+l
+
+#字符串不能通过索引访问去更改其中的字符。
+>>> word[1]='a'
+
+Traceback (most recent call last):
+  File "<pyshell#17>", line 1, in <module>
+    word[1]='a'
+TypeError: 'str' object does not support item assignment
+
+#切片
+>>> print word[5:7]
+wo
+>>> print word[:-5]
+hello
+>>> print word [:]
+helloworld
+
+#连接字符
+>>> newword = ','.join(word)
+>>> newword
+'h,e,l,l,o,w,o,r,l,d'

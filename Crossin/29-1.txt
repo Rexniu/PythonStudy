@@ -1,0 +1,16 @@
+# join
+# split是把一个字符串分割成很多字符串组成的list，二join则是把一个list中的所有
+#字符串连接成一个字符串。join不是list的方法，而是字符串的方法
+>>> s=';'
+>>> li = ['apple','pear','orange']
+>>> fruit = s.join(li)
+>>> print fruit
+apple;pear;orange
+#也可以直接转化
+>>> ';'.join(['apple','pear','orange'])
+'apple;pear;orange'
+>>> '$'.join(['yuan','meiyuan','ouyuan'])
+'yuan$meiyuan$ouyuan'
+#用来连接的可以是多个字符，也可以是一个空串：
+>>> ''.join(['hello','world'])
+'helloworld'
