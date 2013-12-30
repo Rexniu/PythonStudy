@@ -1,0 +1,17 @@
+#默认对字符串按照其中的空格进行分割。
+>>> sentence = 'I am an English sentence'
+>>> sentence.split()
+['I', 'am', 'an', 'English', 'sentence']
+
+#除了空格外，split()同时也会按照换行符\n,制表符\t进行分分割。默认按照空白字符进行分割
+>>> section = 'Hi.I am the one.Bye'
+>>> section.split('.')
+['Hi', 'I am the one', 'Bye']
+#‘.’作为分隔符被去掉了，而空格仍然保留在它的位置上。
+>>> section = 'Hi.I am the one.Bye.'
+>>> section.split('.')
+['Hi', 'I am the one', 'Bye', '']
+#注意最后那个空字符串，每个‘.’都会被作为分隔符，即使它的后面没有其他字符，
+#也会有一个空串被风格出来。
+>>> 'aaa'.split('a')
+['', '', '', '']
