@@ -1,0 +1,7 @@
+f=file('output.txt','w')
+f.write('a string you want to write')
+f.close()
+data='I will be in a file.\nSo cool!'
+out = open('output1.txt','w')
+out.write(data)
+out.close()
