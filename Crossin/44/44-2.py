@@ -1,11 +1,12 @@
-#-*- coding:cp936 -*-
+#-*- coding:utf-8 -*-
 import urllib2
 import json
 from city import city
 
-cityname = raw_input('你想查询那个城市的天气？\n')
+cityname = raw_input('浣犳兂鏌ヨ閭ｄ釜鍩庡競鐨勫ぉ姘旓紵\n')
 citycode = city.get(cityname)
+print citycode
 if citycode:
-    url = ('http://www.weather.com.cn/data/cityinfo/%s.html'%citycode)
+    url = ('http://www.weather.com.cn/data/cityinfo/%s.html' %citycode)
     content = urllib2.urlopen(url).read()
     print content
