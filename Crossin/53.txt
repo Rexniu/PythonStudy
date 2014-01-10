@@ -1,0 +1,38 @@
+>>> import math
+>>> math.pi
+3.141592653589793
+>>> math.e
+2.718281828459045
+>>> math.ceil(1.2)   #对x向上取整
+2.0
+>>> math.floor(1.2)	#对x向下取整
+1.0
+>>> math.pow(2,3)	#指数运算，得到x的y次方
+8.0
+>>> math.log(2.71)	#取对数，默认基底为e，可以使用第二个参数来改变对数的基底。
+0.9969486348916096
+>>> math.log(10,100)
+0.5
+>>> math.log(100,10)
+2.0
+>>> math.sqrt(4)	#平方根
+2.0
+>>> math.fabs(-2)	#绝对值
+2.0
+>>> math.sin(3.14)	
+0.0015926529164868282
+三角函数: 
+math.sin(x)
+math.cos(x)
+math.tan(x)
+math.asin(x)
+math.acos(x)
+math.atan(x)
+注意：这里的x是以弧度为单位，所以计算角度的话，需要先换算
+
+角度和弧度互换: 
+math.degrees(x)
+弧度转角度
+
+math.radians(x)
+角度转弧度
